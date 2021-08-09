@@ -9,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('Develop/public'));
 
+// Set endpoints for the api routes and html routes
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
